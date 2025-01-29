@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 0 10px;
+    width: 1100PX;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+/* narbar */
+
+.navbar{
+    display: flex;
+    background-color: rgb(190, 220, 247);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo{
+    margin-left: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.munu{
+    margin-right: 10px;
+}
+.munu ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.munu ul li button{
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+
+.navicon{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+/* hero */
+
+.herosection{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.profileimg{
+    margin-left: 40px;
+    background: transparent;
+}
+
+.profileimg img{
+    height: 250px;
+    border-radius: 50%;
+}
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:10px;
+    margin-right: 40px;
+}
+
+.name h1{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.about p{
+    font-family: "Poppins", serif;
+}
+.getintouch button{
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    background-color: rgb(238, 236, 119);
+}
