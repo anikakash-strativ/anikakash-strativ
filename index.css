@@ -11,6 +11,7 @@
     width: 1100PX;
     max-width: 100%;
     margin: 10px auto;
+    
 }
 
 /* narbar */
@@ -63,10 +64,10 @@
 .herosection{
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color:antiquewhite;
     padding: 10px;
     align-items: center;
-
+    border-radius: 5px;
 }
 
 .profileimg{
@@ -76,7 +77,7 @@
 
 .profileimg img{
     height: 250px;
-    border-radius: 50%;
+    border-radius: 55%;
 }
 .profileinfo{
     display: flex;
@@ -96,6 +97,9 @@
 
 .about p{
     font-family: "Poppins", serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
 }
 .getintouch button{
     width: 200px;
@@ -115,7 +119,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 20px;
+   margin: 20px 0px;
 }
 
 .headline h1{
@@ -129,7 +133,6 @@
 }
 .projects{
   Display: flex;
-  flex-wrap: wrap;
   gap: 15px;
   margin: 5px auto;
   
@@ -137,7 +140,7 @@
 
 .project{
     flex: 1 1 calc(33.33% - 10px);
-    height: 100%;
+    min-height: 100%;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -165,17 +168,34 @@
 }
 
 
+.project_description {
+    margin-top: 25px;
+}
+
+.Showcase_container h3 {
+    font-family: "Poppins", serif;
+}
+
 .project_description p{
-    margin-top: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .tag{
-    padding: 2px 10px;
+    padding: 5px 12px;
     font-size: 12px;
     border-radius: 15px;
     font-family: "Poppins", serif;
-    margin: 5px;
+    margin: 1px;
 }
+
+.blogfooter p {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+
 .tag:nth-child(odd){
     color: rgb(93, 171, 244);
     background-color: #D1EFFF;
@@ -183,7 +203,7 @@
 }
 
 .tag:nth-child(even){
-    color: rgba(242, 165, 89, 0.811);
+    color: rgba(255, 81, 0, 0.874);
     background-color: white;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -218,6 +238,7 @@ font-family: "Poppins", serif;
    padding: 15px;
    font-family: "Poppins", serif;
    font-size: 15px;
+   
 }
 
 .blogfooter{
@@ -225,10 +246,12 @@ font-family: "Poppins", serif;
     justify-content: space-between;
     padding: 15px;
 }
-.blogfooter p span{
-   margin: 5px;
-}
 
+
+.blogfooter .likecount{
+    font-family: "Poppins", serif;
+    font-size: 15px;
+}
 /* footer */
 
 footer{
@@ -238,6 +261,7 @@ footer{
    align-items: center;
    padding: 15px;
    border-radius: 5px;
+   margin-bottom: 20px;
 }
 
 footer ul {
@@ -251,4 +275,9 @@ footer ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer ul li img{
+    width: 30px;
+    height: 30px;
 }
