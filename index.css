@@ -135,15 +135,14 @@
 }
 .projects {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   margin: 5px auto;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .project {
-  flex: 0 1 calc(33.33% - 10px);
+  flex: 0 1 calc(33% - 10px);
   min-height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -180,10 +179,11 @@
   font-family: "Poppins", serif;
 }
 
-.project_description p {
+.project_stack p {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-size: 12px;
+  margin-top: 15px;
 }
 
 .tag {
@@ -222,15 +222,14 @@
 
 .blogs{
   display: flex;
-  gap: 10px;
+  gap: 15px;
   margin: 5px auto;
-  justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
 }
 
 .blog{
-  flex: 0 1 calc(33.33% - 10px);
+  flex: 0 1 calc(33% - 10px);
   min-height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
