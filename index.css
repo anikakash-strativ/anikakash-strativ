@@ -26,7 +26,12 @@
   height: 80px;
   border-radius: 5px;
   padding: 0 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo {
   margin-left: 10px;
@@ -307,4 +312,186 @@ footer ul li {
 footer ul li img {
   width: 30px;
   height: 30px;
+}
+
+
+/* Responsive Design */
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .munu ul {
+    gap: 10px;
+  }
+
+  .munu ul li button {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .herosection {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profileimg {
+    margin: 0 auto;
+  }
+
+  .profileimg img {
+    height: 200px;
+  }
+
+  .profileinfo {
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .projects, .blogs {
+    justify-content: center;
+  }
+
+  .project, .blog {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  /* footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer ul {
+    justify-content: center;
+    margin-top: 10px;
+  } */
+  .headline h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .munu ul {
+    display: none; /* Hide menu on mobile, you can add a toggle button */
+  }
+
+  .navicon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .herosection {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .profileimg img {
+    height: 180px;
+  }
+
+  .projects, .blogs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project, .blog {
+    flex: 0 1 100%;
+  }
+
+  .getintouch button {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .headline h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Small Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .navicon {
+    font-size: 24px;
+  }
+
+  .herosection {
+    padding: 10px;
+  }
+
+  .profileimg img {
+    height: 150px;
+  }
+
+  .profileinfo {
+    margin: 10px 0;
+  }
+
+  .name h1 {
+    font-size: 25px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .getintouch button {
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .project, .blog {
+    flex: 0 1 100%;
+  }
+
+  .blogtitle {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .headline h1 {
+    font-size: 20px;
+    text-align: center;
+  }
 }
