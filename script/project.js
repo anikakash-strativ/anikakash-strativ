@@ -59,31 +59,26 @@ fetch(projectAPIEndPoint)
             stack.appendChild(tags);
 
 
-            // live images:
+            // Live images:
             const links = document.createElement("div");
             links.classList.add("repo");
 
+            // Live link with icon
             const livelink = document.createElement("a");
             livelink.href = project.live_link;
             livelink.target = "_blank";
+            livelink.innerHTML = `<i class="fa-solid fa-arrow-up-right-from-square repoicon"></i>`; // FontAwesome live link icon
 
-            const liveImg = document.createElement("img");
-            liveImg.src = `./live.png`
-            liveImg.alt = project.title;
+            links.appendChild(livelink);
 
-            livelink.appendChild(liveImg);
-            links.appendChild(livelink)
-
+            // GitHub repo link with icon
             const repolink = document.createElement("a");
             repolink.href = project.github_repo;
             repolink.target = "_blank";
+            repolink.innerHTML = `<i class="fa-brands fa-github repoicon"></i>`; // FontAwesome GitHub icon
 
-            const gitImg = document.createElement("img");
-            gitImg.src = `./github.png`
-            gitImg.alt = project.title;
+            links.appendChild(repolink);
 
-            repolink.appendChild(gitImg);
-            links.appendChild(repolink)
 
             projectBody.appendChild(title);
             projectDiv.appendChild(projectBody);
