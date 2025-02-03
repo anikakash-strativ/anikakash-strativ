@@ -18,6 +18,12 @@
 
 /* narbar */
 
+.stickydiv{
+  position: sticky;
+  top: 0px;
+  /* z-index: 1000; */
+}
+
 .navbar {
   display: flex;
   background-color: #8ecefc;
@@ -26,9 +32,6 @@
   height: 80px;
   border-radius: 5px;
   padding: 0 10px;
-  position: sticky;
-  top: 0px;
-  z-index: 1000;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -154,6 +157,8 @@
 }
 .project img {
   width: 100%;
+  /* height: 200px; */
+  object-fit: cover;
   transition: opacity 0.2s ease-in-out;
   border-radius: 5px;
 }

@@ -9,7 +9,8 @@ fetch(projectAPIEndPoint)
         projectDiv.classList.add("project");
 
         // Cover image:
-
+        const projectImgDiv = document.createElement("div");
+        
         if(project.image){
             const imageLink = document.createElement("a");
             imageLink.href = `https://dev.to${project.live_link}`;
@@ -50,7 +51,7 @@ fetch(projectAPIEndPoint)
             project.tags.forEach((tag)=>{
                 const span = document.createElement("span");
                 span.classList.add("tag");
-                span.textContent = `Stack: ${tag}`; // Added tag text inside the span
+                span.textContent = `${tag}`; // Added tag text inside the span
                 tags.appendChild(span);
             })
 
