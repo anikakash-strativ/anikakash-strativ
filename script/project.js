@@ -68,7 +68,7 @@ fetch(projectAPIEndPoint)
             livelink.target = "_blank";
 
             const liveImg = document.createElement("img");
-            liveImg.src = `../live.png`
+            liveImg.src = `./live.png`
             liveImg.alt = project.title;
 
             livelink.appendChild(liveImg);
@@ -79,7 +79,7 @@ fetch(projectAPIEndPoint)
             repolink.target = "_blank";
 
             const gitImg = document.createElement("img");
-            gitImg.src = `../github.png`
+            gitImg.src = `./github.png`
             gitImg.alt = project.title;
 
             repolink.appendChild(gitImg);
