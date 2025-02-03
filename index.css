@@ -5,7 +5,41 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid rgba(0, 255, 0, 0.5); */
-  
+}
+
+:root {
+  --primary-bg: #8ecefc;
+  --secondary-bg: antiquewhite;
+  --text-color: black;
+  --button-bg: rgba(255, 81, 0, 0.874);
+  --button-text: white;
+  --navbar-text: white;
+  --card-bg: white;
+  --footer-bg: rgb(142, 187, 226);
+  --tag-bg-light: #d1efff;
+  --tag-text-light: rgb(93, 171, 244);
+  --tag-bg-dark: white;
+  --tag-text-dark: rgba(255, 81, 0, 0.874);
+}
+
+.night-mode {
+  --primary-bg: #1e1e1e;
+  --secondary-bg: #121212;
+  --text-color: white;
+  --button-bg: #ff5722;
+  --button-text: #fff;
+  --navbar-text: #fff;
+  --card-bg: #FAEBD7;
+  --footer-bg: #1a1a1a;
+  --tag-bg-light: #424242;
+  --tag-text-light: #ffcc80;
+  --tag-bg-dark: #333;
+  --tag-text-dark: #ff7043;
+}
+
+body {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
 }
 
 
@@ -21,12 +55,11 @@
 .stickydiv{
   position: sticky;
   top: 0px;
-  /* z-index: 1000; */
 }
 
 .navbar {
   display: flex;
-  background-color: #8ecefc;
+  background-color: var(--primary-bg);
   justify-content: space-between;
   align-items: center;
   height: 80px;
@@ -41,7 +74,7 @@
   font-family: "Poppins", serif;
   font-weight: 700;
   font-size: 30px;
-  color: white;
+  color: var(--navbar-text);
 }
 .munu {
   margin-right: 10px;
@@ -60,8 +93,8 @@
   border-radius: 5px;
   font-family: "Poppins", serif;
   font-weight: 500;
-  color: white;
-  background-color: rgba(255, 81, 0, 0.874);
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
 .navicon {
@@ -69,12 +102,16 @@
   color: aliceblue;
 }
 
+.icon{
+  display: none;
+}
+
 /* hero */
 
 .herosection {
   display: flex;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: var(--secondary-bg);
   padding: 10px;
   align-items: center;
   border-radius: 5px;
@@ -102,12 +139,12 @@
   font-weight: 700;
   font-weight: bold;
   font-size: 35px;
-  color: rgba(255, 81, 0, 0.874);
+  color: var(--text-color);
 }
 
 .about p {
   font-family: "Poppins", serif;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   font-size: 15px;
   font-weight: bold;
 }
@@ -154,10 +191,15 @@
   min-height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.project img {
+
+
+.projectImg img {
   width: 100%;
-  /* height: 200px; */
   object-fit: cover;
   transition: opacity 0.2s ease-in-out;
   border-radius: 5px;
@@ -177,16 +219,18 @@
 }
 .Showcase_container {
   text-align: center;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .project_description p{
   margin-top: 25px;
   padding: 10px;
+  color: var(--text-color);
 }
 
 .Showcase_container h3 {
   font-family: "Poppins", serif;
+  color: black;
 }
 
 .project_stack p {
@@ -243,7 +287,7 @@
   min-height: 100%;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  
+  background-color: var(--card-bg);
 }
 
 .blog img {
@@ -296,7 +340,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(142, 187, 226);
+  background-color: var(--footer-bg);
   align-items: center;
   padding: 15px;
   border-radius: 5px;
@@ -339,14 +383,35 @@ footer ul li img {
   }
 
   .munu ul {
-    gap: 10px;
+    display: none; /* Hide menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    left: 15px;
+    background: var(--primary-bg);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
   }
 
-  .munu ul li button {
+  .munu ul.active {
+    display: flex; /* Show menu when active */
+    /* width: 100%; */
+  }
+
+  .icon {
+    display: block; /* Show menu icon */
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+  }
+
+  /* .munu ul li button {
     width: 90px;
     height: 35px;
     font-size: 14px;
-  }
+  } */
 
   .herosection {
     flex-direction: column;
@@ -404,11 +469,27 @@ footer ul li img {
   }
 
   .munu ul {
-    display: none; /* Hide menu on mobile, you can add a toggle button */
+    display: none; /* Hide menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    left: 15px;
+    background: var(--primary-bg);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
   }
 
-  .navicon {
-    display: block;
+  .munu ul.active {
+    display: flex; /* Show menu when active */
+    /* width: 100%; */
+  }
+
+  .icon {
+    display: block; /* Show menu icon */
+    font-size: 30px;
+    color: white;
     cursor: pointer;
   }
 
@@ -455,6 +536,9 @@ footer ul li img {
   .navicon {
     font-size: 24px;
   }
+  .icon{
+    display: flex;
+  }
 
   .herosection {
     padding: 10px;
@@ -474,6 +558,7 @@ footer ul li img {
 
   .about p {
     font-size: 14px;
+    color: var(--text-color);
   }
 
   .getintouch button {

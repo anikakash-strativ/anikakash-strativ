@@ -16,31 +16,31 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-26"
     },
     {
-      "image": "../data/assets/solarSystem.png",
+      "image": "../data/assets/solar.png",
       "title": "Solar System Weight Calculator",
       "description": "This project allows users to input their weight and select a planet. The mass is calculated, and the corresponding planet image is displayed using DOM manipulation and event handling.",
       "tags": ["JavaScript", "DOM Manipulation", "Math", "CSS"],
-      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/Day-30/index.html",
-      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-30"
+      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/Day-24/index.html",
+      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-24"
     },
     {
       "image": "../data/assets/recipePage.png",
       "title": "Omelette Recipe Page",
       "description": "A detailed blog page showcasing an omelette recipe with step-by-step instructions, ingredients, and cooking tips.",
       "tags": ["HTML", "CSS", "Responsive", "Blog"],
-      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/Day-25/index.html",
-      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-25"
+      "live_link": "https://anikakash-strativ.github.io/Frontend_Mentor/recipePage/index.html",
+      "github_repo": "https://github.com/anikakash-strativ/Frontend_Mentor/tree/main/recipePage"
     },
     {
-      "image": "../data/assets/shoppingCart.png",
+      "image": "../data/assets/shopping.png",
       "title": "T-Shirt Shopping Cart",
       "description": "A shopping cart for a T-shirt where the price updates dynamically based on selected color and size. This is a responsive DOM project.",
       "tags": ["JavaScript", "DOM Manipulation", "CSS", "Responsive", "E-Commerce"],
-      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/Day-27/index.html",
-      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-27"
+      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/CSS/ProductCart/index.html",
+      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/CSS/ProductCart"
     },
     {
-      "image": "../data/assets/memeGenerator.png",
+      "image": "../data/assets/meme.png",
       "title": "Meme Generator",
       "description": "A fun meme generator that displays random memes when the user clicks a button.",
       "tags": ["JavaScript", "DOM Manipulation", "API"],
@@ -52,8 +52,8 @@
       "title": "Image Search App",
       "description": "An image search app that fetches images from the Unsplash API with pagination functionality.",
       "tags": ["JavaScript", "API", "HTML", "CSS", "Pagination"],
-      "live_link": "https://anikakash-strativ.github.io/30DaysofJS/Day-24/index.html",
-      "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-24"
+      "live_link": "https://anikakash.github.io/JSProjects/ImageSearch/index.html",
+      "github_repo": "https://github.com/anikakash/JSProjects/tree/main/ImageSearch"
     }
   ]
   

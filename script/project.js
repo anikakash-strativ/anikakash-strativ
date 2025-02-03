@@ -10,7 +10,7 @@ fetch(projectAPIEndPoint)
 
         // Cover image:
         const projectImgDiv = document.createElement("div");
-        
+        projectImgDiv.classList.add("projectImg")
         if(project.image){
             const imageLink = document.createElement("a");
             imageLink.href = `https://dev.to${project.live_link}`;
@@ -23,7 +23,8 @@ fetch(projectAPIEndPoint)
             image.style.width = "100%";
 
             imageLink.appendChild(image);
-            projectDiv.appendChild(imageLink);
+            projectImgDiv.appendChild(imageLink)
+            projectDiv.appendChild(projectImgDiv);
 
             // Project Body:
 
