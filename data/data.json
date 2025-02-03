@@ -1,6 +1,6 @@
 [
     {
-      "image": "../data/assets/leaderBoard.png",
+      "image": "./data/assets/leaderBoard.png",
       "title": "Leader Board - 30 Days of JS",
       "description": "This is a DOM manipulation project with the features of night mode, responsiveness, local storage, and optimized with reusable JS code.",
       "tags": ["JavaScript", "HTML", "CSS", "DOM Manipulation"],
@@ -8,7 +8,7 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-28"
     },
     {
-      "image": "../data/assets/countryList.png",
+      "image": "./data/assets/countryList.png",
       "title": "World Countries List",
       "description": "A dynamic list of world countries with search and sorting functionality. Users can search countries by starting or containing words, and toggle sorting between ascending or descending order.",
       "tags": ["JavaScript", "DOM Manipulation", "Search", "Sorting", "HTML", "CSS"],
@@ -16,7 +16,7 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-26"
     },
     {
-      "image": "../data/assets/solar.png",
+      "image": "./data/assets/solar.png",
       "title": "Solar System Weight Calculator",
       "description": "This project allows users to input their weight and select a planet. The mass is calculated, and the corresponding planet image is displayed using DOM manipulation and event handling.",
       "tags": ["JavaScript", "DOM Manipulation", "Math", "CSS"],
@@ -24,7 +24,7 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-24"
     },
     {
-      "image": "../data/assets/recipePage.png",
+      "image": "./data/assets/recipePage.png",
       "title": "Omelette Recipe Page",
       "description": "A detailed blog page showcasing an omelette recipe with step-by-step instructions, ingredients, and cooking tips.",
       "tags": ["HTML", "CSS", "Responsive", "Blog"],
@@ -32,7 +32,7 @@
       "github_repo": "https://github.com/anikakash-strativ/Frontend_Mentor/tree/main/recipePage"
     },
     {
-      "image": "../data/assets/shopping.png",
+      "image": "./data/assets/shopping.png",
       "title": "T-Shirt Shopping Cart",
       "description": "A shopping cart for a T-shirt where the price updates dynamically based on selected color and size. This is a responsive DOM project.",
       "tags": ["JavaScript", "DOM Manipulation", "CSS", "Responsive", "E-Commerce"],
@@ -40,7 +40,7 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/CSS/ProductCart"
     },
     {
-      "image": "../data/assets/meme.png",
+      "image": "./data/assets/meme.png",
       "title": "Meme Generator",
       "description": "A fun meme generator that displays random memes when the user clicks a button.",
       "tags": ["JavaScript", "DOM Manipulation", "API"],
@@ -48,7 +48,7 @@
       "github_repo": "https://github.com/anikakash-strativ/30DaysofJS/tree/main/Day-29"
     },
     {
-      "image": "../data/assets/imageSearch.png",
+      "image": "./data/assets/imageSearch.png",
       "title": "Image Search App",
       "description": "An image search app that fetches images from the Unsplash API with pagination functionality.",
       "tags": ["JavaScript", "API", "HTML", "CSS", "Pagination"],
