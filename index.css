@@ -10,10 +10,13 @@
 :root {
   --primary-bg: #8ecefc;
   --secondary-bg: white;
+  --nav-bg : #f4f4f4;
   --text-color: black;
   --button-bg: #1D87DC ;
   --button-text: white;
+  --head-p-text : #727272;
   --navbar-text: rgb(0, 0, 0);
+  --nav-icon: #676767;
   --card-bg: white;
   --footer-bg: rgb(142, 187, 226);
   --tag-bg-light: #d1efff;
@@ -24,12 +27,14 @@
 
 .night-mode {
   --primary-bg: #1e1e1e;
-  --secondary-bg: #121212;
+  --secondary-bg:  #333333;
+  --nav-bg : #2a2929;
   --text-color: white;
-  --button-bg: #ff5722;
+  --head-p-text : #ffffff;
   --button-text: #fff;
   --navbar-text: #fff;
-  --card-bg: #FAEBD7;
+  --nav-icon: #cac7c7;
+  --card-bg: white;
   --footer-bg: #1a1a1a;
   --tag-bg-light: #424242;
   --tag-text-light: #ffcc80;
@@ -59,7 +64,7 @@ body {
 
 .navbar {
   display: flex;
-  background-color: var(--secondary-bg);
+  background-color: var(--nav-bg);
   justify-content: space-between;
   align-items: center;
   height: 80px;
@@ -99,10 +104,14 @@ body {
 
 .navicon {
   font-size: 30px;
-  color: #676767;
-  
+  color: var(--nav-icon);
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
+.navicon:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 0px 8px rgba(142, 206, 252, 0.7); /* Light glow */
+}
 .icon{
   display: none;
   color: #676767;
@@ -139,26 +148,57 @@ body {
 .name h1 {
   font-family: "Poppins", serif;
   font-weight: 700;
-  font-weight: bold;
   font-size: 35px;
   color: var(--text-color);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--text-color); 
+  animation: typing 2s steps(20, end) forwards, blink 0.7s infinite;
 }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 
 .about p {
   font-family: "Poppins", serif;
   color: var(--text-color);
   font-size: 15px;
   font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards 0.5s;
 }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .getintouch button {
   width: 136px;
   height: 40px;
-  border: 0px;
+  border: 0;
   border-radius: 4px;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   background-color: var(--button-bg);
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.getintouch button:hover {
+  /* background-color: #FE641B; */
+  transform: scale(1.05);
 }
 
 /* Project section */
@@ -178,7 +218,7 @@ body {
   text-align: center;
 }
 .headline p{
-  color: #727272;
+  color: var(--head-p-text);
 }
 .strativLogo{
   display: flex;
@@ -187,7 +227,7 @@ body {
 }
 
 .strativLogo p{
-  color: black;
+  color: var(--text-color);
   font-size: 30px;
   padding: 5px;
   margin-bottom: 10px;
@@ -237,7 +277,14 @@ body {
   height: 50px;
   margin: 10px 0;
   color: #676767;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
+
+.repo .repoicon:hover{
+  transform: scale(1.2);
+  text-shadow: 0px 0px 8px rgba(142, 206, 252, 0.7); /* Light glow */
+}
+
 .Showcase_container {
   text-align: center;
   padding: 0 20px;
@@ -246,12 +293,12 @@ body {
 .project_description p{
   margin-top: 25px;
   padding: 10px;
-  color: var(--text-color);
+  color: #535151;
 }
 
 .Showcase_container h3 {
   font-family: "Poppins", serif;
-  color: black;
+  color: #454343e0;
 }
 
 .project_stack p {
@@ -264,7 +311,7 @@ body {
 .tag {
   padding: 5px 12px;
   font-size: 14px;
-  border-radius: 15px;
+  border-radius: 16px;
   font-family: "Poppins", serif;
   margin: 1px;
 }
@@ -276,14 +323,18 @@ body {
 }
 
 .tag:nth-child(odd) {
-  border: 2px solid #B9E6FE;
+  border: 3px solid #B9E6FE;
   color: #026AA2;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
+.tag:nth-child(odd):hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
 .tag:nth-child(even) {
-  border: 2px solid #ABEFC6;
+  border: 3px solid #ABEFC6;
   color: #067647;
+}
+.tag:nth-child(even):hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -321,8 +372,6 @@ body {
   }
 
   
-
-
 .blogtitle {
   font-family: "Poppins", serif;
   font-weight: 500;
@@ -332,27 +381,34 @@ body {
 .blogtitle a{
   text-decoration: none;
   color: black;
+  font-weight: 400;
+  font-size: 18px;
 }
 .blogbody .author p {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
-  font-family: "Open Sans", serif;
-  font-weight: 400;
+  font-family: "Poppins", serif;
+  color: #454343e0;
+  font-weight: 500;
   margin-top: 5px;
 }
 
 .blogbody .projectdescription p{
   padding: 15px;
-  font-family: "Open Sans", serif;
+  color: #535151;
+  /* font-family: "Open Sans", serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 300; */
 }
 
 .blogfooter {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  gap: 26px;
+  align-items: flex-start;
 }
 
 .blogfooter .likecount {
@@ -364,11 +420,12 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--footer-bg);
+  background-color: #1D3951;
   align-items: center;
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
+  color: white;
 }
 
 footer ul {
@@ -382,10 +439,15 @@ footer ul li {
   justify-content: center;
 }
 
-footer ul li img {
-  width: 30px;
-  height: 30px;
+.footerlogo ul li{
+  font-size: 24px;
+  cursor: pointer;
 }
+
+.footergit{
+  cursor: pointer;
+}
+
 
 
 /* Responsive Design */
@@ -429,11 +491,6 @@ footer ul li img {
     cursor: pointer;
   }
 
-  /* .munu ul li button {
-    width: 90px;
-    height: 35px;
-    font-size: 14px;
-  } */
 
   .herosection {
     flex-direction: column;
@@ -462,15 +519,6 @@ footer ul li img {
     flex: 0 1 calc(50% - 10px);
   }
 
-  /* footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer ul {
-    justify-content: center;
-    margin-top: 10px;
-  } */
   .headline h1 {
     font-size: 20px;
     text-align: center;
@@ -494,10 +542,10 @@ footer ul li img {
     display: none; /* Hide menu initially */
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 15px;
     left: 15px;
-    background: var(--primary-bg);
+    background: white;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -511,7 +559,6 @@ footer ul li img {
   .icon {
     display: block; /* Show menu icon */
     font-size: 30px;
-    color: white;
     cursor: pointer;
   }
 
