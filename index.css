@@ -33,7 +33,7 @@
   --head-p-text : #ffffff;
   --button-text: #fff;
   --navbar-text: #fff;
-  --nav-icon: #cac7c7;
+  --nav-icon: #848388;
   --card-bg: white;
   --footer-bg: #1a1a1a;
   --tag-bg-light: #424242;
@@ -472,10 +472,10 @@ footer ul li {
     display: none; /* Hide menu initially */
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 63px;
     right: 15px;
     left: 15px;
-    background: white;
+    background:var(--nav-bg);
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -542,10 +542,10 @@ footer ul li {
     display: none; /* Hide menu initially */
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 56px;
     right: 15px;
     left: 15px;
-    background: white;
+    background:var(--nav-bg);
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
