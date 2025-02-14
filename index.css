@@ -59,7 +59,7 @@ body {
 
 .stickydiv{
   position: sticky;
-  top: 0px;
+  right: -15px;
 }
 
 .navbar {
@@ -258,10 +258,12 @@ body {
 
 
 .projectImg img {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   transition: opacity 0.2s ease-in-out;
   border-radius: 5px;
+  width: 353px;
+  height: 247px;
 }
 
 .repo {
