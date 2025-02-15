@@ -59,7 +59,7 @@ body {
 
 .stickydiv{
   position: sticky;
-  right: -15px;
+  top: 0px;
 }
 
 .navbar {
